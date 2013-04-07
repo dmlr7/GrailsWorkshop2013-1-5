@@ -4,8 +4,8 @@
 5: Database relationships                       done
 6: Practice
     1:
-        a)                                      miss
-        b)                                      miss
+        a)                                      done
+        b)                                      done
         c)                                      miss
         d)                                      miss
         e)                                      miss
@@ -15,20 +15,17 @@
         i)                                      miss
         j)                                      miss
     2:Answer the following questions:
-        ● What  is  the  H2  database  console?  What  risks  does  it  represents? What would you as a
-developer do to prevent those risks?
+        ● What  is  the  H2  database  console?  What  risks  does  it  represents?
+          What would you as a developer do to prevent those risks?
         ● When do you set up the database and the tables to use on your application?
-        ● In  Grails,  how  it  is  replaced  the  XML  configuration  in  your  application?  Give  two  motives
-why Grails solution improves the previous one.
+        ● In  Grails,  how  it  is  replaced  the  XML  configuration  in  your  application?
+          Give  two  motives why Grails solution improves the previous one.
         ● What is a domain instance? When does Grails validates a domain instance?
         ● When using scaffolding, is it possible to modify views or logic of a given domain class?
-If  the   answer  is yes, explain how can you do that, but if the answer is  no, give one reason
-why this is not allowed.
-        ● What  can  you  do  in  order  to  have  a   set  of  data  in  the  Grails  database  to  persist  along
-several executions of the project, while in development?
+          If  the   answer  is yes, explain how can you do that,
+          but if the answer is  no, give one reason why this is not allowed.
+        ● What  can  you  do  in  order  to  have  a   set  of  data  in  the Grails  database  
+          to  persist  along several executions of the project, while in development?
         ● What  are  the differences between using findAll(), getAll() and list() and when it’s useful or
-not to use each of them for finding all of domain class instances?
+          not to use each of them for finding all of domain class instances?
         ● What is the difference between using p.save()  and p.save(flush:true, failOnError:true)
-   ,fiOErr re
-    alnro:tu)
-

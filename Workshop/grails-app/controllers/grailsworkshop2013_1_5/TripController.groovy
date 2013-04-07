@@ -7,7 +7,7 @@ class TripController {
         def trip = new Trip(params)
         if(!trip.hasErrors() && trip.save()){
             flash.message = "Trip ${trip.id} created"
-            redirect(action:show,id,trip,id)
+            redirect(action:show,id:trip.id)
         }
         else{
             render(view:'create',model:[trip:trip])
