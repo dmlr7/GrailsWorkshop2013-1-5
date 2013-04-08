@@ -7,6 +7,7 @@ class User {
     String login
     String password
     
+    //Class relations (DB Relations)
     static hasMany = [trips : Trip]
     
     String toString() {

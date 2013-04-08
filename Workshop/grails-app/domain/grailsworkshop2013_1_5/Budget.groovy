@@ -9,6 +9,7 @@ class Budget {
    
     Trip trip 
     
+    static belongsTo = [owner : Trip]
     static constraints = {
         trip nullable: true
     }

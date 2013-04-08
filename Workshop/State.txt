@@ -1,4 +1,4 @@
-4: Create aplication                            done
+﻿4: Create aplication                            done
 4.1: Creating the domain class                  done
 4.2: Building the controller and views          done
 5: Database relationships                       done
@@ -6,12 +6,12 @@
     1:
         a)                                      done
         b)                                      done
-        c)                                      miss
-        d)                                      miss
-        e)                                      miss
+        c)                                      done
+        d)                                      done
+        e)                                      done
         f)                                      miss
-        g)                                      miss
-        h)                                      miss
+        g)                                      done
+        h)                                      done
         i)                                      miss
         j)                                      miss
     2:Answer the following questions:

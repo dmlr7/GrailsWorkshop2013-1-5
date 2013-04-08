@@ -8,9 +8,9 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Current Trip</title>
+    <title>Sample title</title>
   </head>
   <body>
-    ${trips.name}
+    <h1>Sample line</h1>
   </body>
 </html>

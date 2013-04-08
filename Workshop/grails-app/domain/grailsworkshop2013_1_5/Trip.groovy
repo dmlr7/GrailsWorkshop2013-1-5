@@ -10,11 +10,12 @@ class Trip {
     String purpose
     String notes
     
+    //Class relations (DB Relations)
     static belongsto = [owner : User]
     static hasOne = [budget:Budget]
     static constraints = {
         name blank: false, size: 3..15
-        name unique: true  // d. There can be only one trip under the same nam
+        name unique: true  // d. There can be only one trip under the same name
         city blank: false
         startDate blank: false
         endDate blank: false
@@ -24,7 +25,7 @@ class Trip {
         endDate min: new Date()
         purpose inList: ["Pleasure", "Education", "Business" ,"Scientific" , "Political"]
         //e. The  purpose  of  the  Trip  should  be   one  of  the  following:  Pleasure,  Education,  business,
-           //Scientific, Political
+        //Scientific, Political
        budget nullable: true
     }
     
