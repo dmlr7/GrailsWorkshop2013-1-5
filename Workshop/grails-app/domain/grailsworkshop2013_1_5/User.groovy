@@ -18,7 +18,5 @@ class User {
         lastname blank:false, size:3..15
         login blank:false, size:3..15
         password blank:false, size:6..15
-//      c. None  of  the  User  fields  can  be  left  blank.  name,  last  name  and  login  values  must  be
-//      between 3 and 15 characters, and password must be between 6 and 15 characters
     }
 }

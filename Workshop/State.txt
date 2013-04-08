@@ -6,12 +6,12 @@
     1:
         a)                                      done
         b)                                      done
-        c)                                      done
-        d)                                      done
-        e)                                      done
+        c)                                      miss
+        d)                                      miss
+        e)                                      miss
         f)                                      miss
         g)                                      miss
-        h)                                      done
+        h)                                      miss
         i)                                      miss
         j)                                      miss
     2:Answer the following questions:
