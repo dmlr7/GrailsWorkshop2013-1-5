@@ -5,7 +5,7 @@ class CurrentController {
     def index = { 
         redirect(action: "current")
     }
-    
+   
     def current = {
         def trips = Trip.list()
         [trips:trips]

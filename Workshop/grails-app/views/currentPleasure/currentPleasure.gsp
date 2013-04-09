@@ -8,7 +8,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Current Trip</title>
+    <title>Current Pleasure</title>
   </head>
   <body>
     <table border=8px width=50%> 
@@ -25,7 +25,6 @@
               <td><%println trips[i].city%></td>
               <td><%println trips[i].purpose%></td>
               </tr>
-              
       <%}%>
     </table>
   </body>
