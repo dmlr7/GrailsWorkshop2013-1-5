@@ -9,12 +9,12 @@
         c)                                      done
         d)                                      done
         e)                                      done
-        f)                                      miss
+        f)                                      done
         g)                                      done
         h)                                      done
         i)                                      miss
         j)                                      miss
-    2:Answer the following questions:
+    2:Answer the following questions: DONE
         ● What  is  the  H2  database  console?  What  risks  does  it  represents?
           What would you as a developer do to prevent those risks?
         ● When do you set up the database and the tables to use on your application?
