@@ -8,24 +8,71 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Current Pleasure</title>
+    <title>Sample title</title>
   </head>
   <body>
-    <table border=8px width=50%> 
-      <!--Table headers-->
-      <tr>
+    <h1>All Trips</h1>
+    <table>
+    <tr>
         <th>Name</th>
-        <th>City</th>
-        <th>Purpose</th>
-      </tr>
-      <!--Table data-->
-      <%  for(int i=0; i<trips.size(); i++){%>
-              <tr>
-              <td><%println trips[i].name%></td>
-              <td><%println trips[i].city%></td>
-              <td><%println trips[i].purpose%></td>
-              </tr>
-      <%}%>
-    </table>
+         <th>City</th>
+         <th>Purpose</th>
+    </tr>
+
+    <g:each in="${trips}">
+        <tr>
+             <td>${it.name}</td>
+             <td>${it.city}</td>
+             <td>${it.purpose}</td>
+        </tr>
+    </g:each>
+</table>
+    <h4>Trips for Political Reasons:</h4>
+    <g:findAll in="${trips}" expr="it.purpose == 'Political'">
+     <table>
+    <tr>
+        <th>Name</th>
+         <th>City</th>
+         <th>Purpose</th>
+    </tr>
+    <tr>
+             <td>${it.name}</td>
+             <td>${it.city}</td>
+             <td>${it.purpose}</td>
+        </tr>
+      </table>
+</g:findAll>
+
+  <h4>Trips for Education Reasons:</h4>
+    <g:findAll in="${trips}" expr="it.purpose == 'Education'">
+     <table>
+    <tr>
+        <th>Name</th>
+         <th>City</th>
+         <th>Purpose</th>
+    </tr>
+    <tr>
+             <td>${it.name}</td>
+             <td>${it.city}</td>
+             <td>${it.purpose}</td>
+        </tr>
+      </table>
+</g:findAll>
+<h4>Trips for Scientific Reasons:</h4>
+    <g:findAll in="${trips}" expr="it.purpose == 'Scientific'">
+     <table>
+    <tr>
+        <th>Name</th>
+         <th>City</th>
+         <th>Purpose</th>
+    </tr>
+    <tr>
+             <td>${it.name}</td>
+             <td>${it.city}</td>
+             <td>${it.purpose}</td>
+        </tr>
+      </table>
+</g:findAll>
+
   </body>
 </html>
