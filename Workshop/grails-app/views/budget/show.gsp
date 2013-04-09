@@ -59,6 +59,15 @@
 				</li>
 				</g:if>
 			
+				<g:if test="${budgetInstance?.owner}">
+				<li class="fieldcontain">
+					<span id="owner-label" class="property-label"><g:message code="budget.owner.label" default="Owner" /></span>
+					
+						<span class="property-value" aria-labelledby="owner-label"><g:link controller="trip" action="show" id="${budgetInstance?.owner?.id}">${budgetInstance?.owner?.encodeAsHTML()}</g:link></span>
+					
+				</li>
+				</g:if>
+			
 				<g:if test="${budgetInstance?.tickets}">
 				<li class="fieldcontain">
 					<span id="tickets-label" class="property-label"><g:message code="budget.tickets.label" default="Tickets" /></span>

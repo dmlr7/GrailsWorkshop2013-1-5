@@ -34,6 +34,14 @@
 	<g:field name="otherexpenses" value="${fieldValue(bean: budgetInstance, field: 'otherexpenses')}" required=""/>
 </div>
 
+<div class="fieldcontain ${hasErrors(bean: budgetInstance, field: 'owner', 'error')} required">
+	<label for="owner">
+		<g:message code="budget.owner.label" default="Owner" />
+		<span class="required-indicator">*</span>
+	</label>
+	<g:select id="owner" name="owner.id" from="${grailsworkshop2013_1_5.Trip.list()}" optionKey="id" required="" value="${budgetInstance?.owner?.id}" class="many-to-one"/>
+</div>
+
 <div class="fieldcontain ${hasErrors(bean: budgetInstance, field: 'tickets', 'error')} required">
 	<label for="tickets">
 		<g:message code="budget.tickets.label" default="Tickets" />

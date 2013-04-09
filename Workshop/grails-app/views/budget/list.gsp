@@ -32,6 +32,8 @@
 					
 						<g:sortableColumn property="otherexpenses" title="${message(code: 'budget.otherexpenses.label', default: 'Otherexpenses')}" />
 					
+						<th><g:message code="budget.owner.label" default="Owner" /></th>
+					
 						<g:sortableColumn property="tickets" title="${message(code: 'budget.tickets.label', default: 'Tickets')}" />
 					
 					</tr>
@@ -47,6 +49,8 @@
 						<td>${fieldValue(bean: budgetInstance, field: "lodging")}</td>
 					
 						<td>${fieldValue(bean: budgetInstance, field: "otherexpenses")}</td>
+					
+						<td>${fieldValue(bean: budgetInstance, field: "owner")}</td>
 					
 						<td>${fieldValue(bean: budgetInstance, field: "tickets")}</td>
 					
