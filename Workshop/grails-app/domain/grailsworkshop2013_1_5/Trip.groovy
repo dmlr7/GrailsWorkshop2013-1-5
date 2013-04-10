@@ -1,5 +1,9 @@
 package grailsworkshop2013_1_5
 
+/*
+ *This class represents a Trip that is scheduled by an User.
+ *A Trip only belongs to 1 particular User.
+*/
 class Trip {
     
     String name
@@ -13,6 +17,8 @@ class Trip {
     //Class relations (DB Relations)
     static belongsto = [owner : User]
     static hasOne = [budget:Budget]
+    
+    //Trip constrains
     static constraints = {
         name blank: false, size: 3..15, unique: true  // d. There can be only one trip under the same name
         city blank: false
@@ -21,14 +27,12 @@ class Trip {
         purpose blank: false
         notes blank: false
         startDate min: new Date()
-        endDate min: new Date() //a. Neither the start Date nor the end Date can be previous to the current Date
-        //b. None of the fields of Trip can be left blank
+        endDate min: new Date() 
         purpose inList: ["Pleasure", "Education", "Business" ,"Scientific" , "Political"]
-        //e. The  purpose  of  the  Trip  should  be   one  of  the  following:  Pleasure,  Education,  business,
-        //Scientific, Political
-       budget nullable: true
+        budget nullable: true
     }
     
+    //Function to get Trips name when associates to a User
     String toString() {
         "${name}"
     }

@@ -1,12 +1,15 @@
 package grailsworkshop2013_1_5
-
+/*
+ *This Controller creates a view that list 
+ *all the trips created by the users.
+*/
 class TripController {
-
-    //def index() { }
     
+    //Creates default CRUD for Trip Module
     def scaffold = Trip
     
-     def index() { 
+    //Default action: List Trips
+    def index() { 
         redirect(action : list)
     }
 }

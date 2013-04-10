@@ -2,10 +2,11 @@ import grailsworkshop2013_1_5.*
 class BootStrap {
 
     def init = { servletContext ->
-        //new Trip(name:"trip1",city:"Bogota D.C",startDate:"2014-04-15 00:00:00 COT",endDate:"2014-04-18 00:00:00 COT", purpose:"Pleasure",notes:"Nothing", Budget:null ).save()
-     
-        new User(name:"Eduardo",lastname:"Romero", login:"edromero", password:"kjhllkj", Trip:"trip1").save() 
-        new User(name:"Jorge",lastname:"Serrano", login:"jaserranoj", password:"kjhllkj", Trip:"trip2").save() 
+        
+        //Test data
+        new User(name:"Jorge",lastname:"Serrano", login:"jaserranoj", password:"kjhllkj", Trip:"Trip 1").save()
+        new User(name:"Eduardo",lastname:"Romero", login:"edromero", password:"kjhllkj", Trip:"Trip 2").save() 
+        new Trip(name:"Trip 1",city:"Cartagena",startDate:"12/09/2013",endDate:"20/09/2013", purpose:"Pleasure", notes:"None").save()
     }
     def destroy = {
     }

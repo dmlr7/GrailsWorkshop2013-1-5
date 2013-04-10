@@ -12,7 +12,7 @@
   </head>
   <body>
     <h1>All Trips</h1>
-    <table>
+    <table border=8px width=20%>
     <tr>
         <th>Name</th>
          <th>City</th>
@@ -29,7 +29,7 @@
 </table>
     <h4>Trips for Political Reasons:</h4>
     <g:findAll in="${trips}" expr="it.purpose == 'Political'">
-     <table>
+     <table border=8px width=20%>
     <tr>
         <th>Name</th>
          <th>City</th>
@@ -45,7 +45,7 @@
 
   <h4>Trips for Education Reasons:</h4>
     <g:findAll in="${trips}" expr="it.purpose == 'Education'">
-     <table>
+     <table border=8px width=20%>
     <tr>
         <th>Name</th>
          <th>City</th>
@@ -60,7 +60,7 @@
 </g:findAll>
 <h4>Trips for Scientific Reasons:</h4>
     <g:findAll in="${trips}" expr="it.purpose == 'Scientific'">
-     <table>
+     <table border=8px width=20%>
     <tr>
         <th>Name</th>
          <th>City</th>

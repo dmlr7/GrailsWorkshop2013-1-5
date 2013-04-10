@@ -12,7 +12,7 @@
         f)                                      done
         g)                                      done
         h)                                      done
-        i)                                      miss
+        i)                                      done
         j)                                      miss
     2:Answer the following questions: DONE
         ● What  is  the  H2  database  console?  What  risks  does  it  represents?

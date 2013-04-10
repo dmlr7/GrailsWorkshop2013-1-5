@@ -1,5 +1,8 @@
 package grailsworkshop2013_1_5
-
+/*
+ *This class represents a User in the system.
+ *An User can schedule many trips.
+*/
 class User {
     
     String name
@@ -10,16 +13,16 @@ class User {
     //Class relations (DB Relations)
     static hasMany = [trips : Trip]
     
+    //Function to get Users name when associates to a Trip
     String toString() {
         "${name} + ${lastname}"
     }
     
+    //User constrains
     static constraints = {
         name blank:false, size:3..15
         lastname blank:false, size:3..15
         login blank:false, size:3..15
         password blank:false, size:6..15
-        //c. None  of  the  User  fields  can  be  left  blank.  name,  last  name  and  login  values  must  be
-        //between 3 and 15 characters, and password must be between 6 and 15 characters
     }
 }
